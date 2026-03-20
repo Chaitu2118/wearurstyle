@@ -1,0 +1,39 @@
+.skeleton-card {
+  pointer-events: none;
+}
+
+.skeleton-img {
+  width: 100%;
+  height: 200px;
+  background: #e0e0e0;
+  border-radius: 8px;
+}
+
+.skeleton-text {
+  background: #e0e0e0;
+  border-radius: 4px;
+  margin-top: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+.skeleton-text.title {
+  height: 16px;
+  width: 80%;
+}
+
+.skeleton-text.price {
+  height: 14px;
+  width: 40%;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}

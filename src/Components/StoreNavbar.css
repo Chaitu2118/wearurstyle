@@ -1,0 +1,46 @@
+/* ===== Store Navbar Base =====
+.navbar {
+  padding: 0.6rem 1.2rem;
+}
+
+/* Brand */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Search bar */
+.navbar-search {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  max-width: 420px;
+}
+
+.navbar-search input {
+  min-width: 220px;
+}
+
+/* Right nav */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.navbar-nav .nav-link {
+  white-space: nowrap;
+}
+
+.navbar button {
+  white-space: nowrap;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+  .navbar-search {
+    width: 100%;
+    margin: 10px 0;
+  }
+} 
