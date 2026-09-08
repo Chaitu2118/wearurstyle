@@ -21,7 +21,7 @@ function AdminDashboard() {
       .then(data => setStats(data));
   }, [token]);
 
-  return (
+  return ( 
     <div className="container mt-4">
       <h2>📊 Admin Dashboard</h2>
 
