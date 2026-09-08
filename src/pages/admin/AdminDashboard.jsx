@@ -36,49 +36,19 @@ function AdminDashboard() {
     if (token) fetchStats();
   }, [token]);
 
-  return (
-    <div className="admin-page-root">
-      {/* Admin Header Banner */}
-      <div className="admin-header-strip">
-        <div className="admin-header-container">
-          <div className="admin-header-left">
-            <span className="admin-overhead-tag">MANAGEMENT CONSOLE</span>
-            <h1 className="admin-main-heading font-serif">Executive Atelier Dashboard</h1>
-          </div>
-          <div className="admin-header-actions">
-            <button
-              type="button"
-              className="btn-admin-primary"
-              onClick={() => navigate("/admin/products")}
-            >
-              <Plus size={15} />
-              <span>Add New Garment</span>
-            </button>
-          </div>
-        </div>
-      </div>
+  return ( 
+    <div className="container mt-4">
+      <h2>📊 Admin Dashboard</h2>
 
-      {/* Admin Subnav Tabs */}
-      <div className="admin-subnav-strip">
-        <div className="admin-subnav-container">
-          <Link to="/admin/dashboard" className="admin-tab-item is-active">
-            <Layers size={14} />
-            <span>Overview</span>
-          </Link>
-          <Link to="/admin/products" className="admin-tab-item">
-            <Shirt size={14} />
-            <span>Garment Catalog</span>
-          </Link>
-          <Link to="/admin/orders" className="admin-tab-item">
-            <ShoppingBag size={14} />
-            <span>Client Orders</span>
-          </Link>
-          <Link to="/admin/users" className="admin-tab-item">
-            <Users size={14} />
-            <span>User Accounts</span>
-          </Link>
+      <div className="row g-4 mt-2">
+        <div className="col-md-3">
+          <div className="card text-center shadow-sm">
+            <div className="card-body">
+              <h5>Users</h5>
+              <h3>{stats.users}</h3>
+            </div>
+          </div>
         </div>
-      </div>
 
       <div className="admin-main-container">
         {/* Metric Cards Grid */}
